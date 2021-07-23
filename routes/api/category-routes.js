@@ -31,7 +31,7 @@ router.get("/:id", (req, res) => {
     if (!categoryData) {
       res
         .status(404)
-        .json({ message: "No categories matching that field found" });
+        .json({ message: "No categories matching the field found" });
       return;
     }
     res.status(200).json(categoryData);
